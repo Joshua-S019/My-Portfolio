@@ -51,3 +51,23 @@ p, ul, li {
 #more-about {
     padding: 100px;
 }
+
+@media (max-width: 790px) {
+    #tribute-img {
+        width: 80%;
+    }
+}
+@media (max-width: 550px) {
+    #feats-section {
+        width: 80%;
+    }
+}
+
+@media (max-width: 375px) {
+    #title {
+        font-size: 2.5rem;
+    }
+    #feats-section {
+        width: 100%;
+    }
+}

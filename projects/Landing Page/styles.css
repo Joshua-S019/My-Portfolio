@@ -1,13 +1,6 @@
 * {
     margin: 0;
 }
-/* Colors 
-navy= #0F044C
-dark= #141E61
-gray= #787A91
-white= #EEEEEE
-*/
-
 body {
     text-align: center;
     display: block;
@@ -73,6 +66,12 @@ li {
     margin: 125px auto;
     width: 60%;
 }
+#form-img {
+    width: 75%;
+}
+#video {
+    width: 100%;
+}
 
 @media (max-width: 1050px){
     #header-img {
@@ -100,5 +99,17 @@ li {
     }
     #navbar {
         margin: 10px;
+    }
+}
+@media (max-width: 810px) {
+    #form-section h2 {
+        font-size: 1.5rem;
+    }
+    #form-section, #about-section, #video-section {
+        width: 80%;
+    }
+    .nav-link {
+        font-size: 1rem;
+        margin: 0 20px;
     }
 }

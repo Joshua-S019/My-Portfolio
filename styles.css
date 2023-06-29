@@ -1,28 +1,22 @@
+/* General Tags */
 * {
     margin: 0;
     padding: 0;
 }
-
-/* General Tags */
 a {
     text-decoration: none;
 }
-
 h1, h2, a {
     font-family: "Roboto Slab";
     font-weight: 400;
 }
-
 p {
     font-family: "Roboto";
     font-weight: 400;
 }
-
 body {
     position: relative;
 }
-
-
 
 /* Navbar */
 #navbar {
@@ -46,13 +40,13 @@ body {
     background-color: #3852b2;
 }
 
-
 /* Main Doc */
 #main-doc {
     position: absolute;
     top: 50px;
     background-color: #dae8e8;
 }
+
 /* Welcome Section */
 #header {
     background: linear-gradient(#041240, #3852b2);
@@ -61,7 +55,6 @@ body {
 }
 #welcome-title {
     font-size: 3rem;
-    width: 30%;
     margin: 0 auto;
     padding-top: 75px;
 }
@@ -126,8 +119,8 @@ body {
     top: -10px;
     left: -10px;
     box-shadow: 10px 10px 3px rgb(117, 117, 117);
-
 }
+
 /* Footer */
 #footer {
     background-color: #3852b2;
@@ -146,6 +139,48 @@ body {
 }
 
 
+/* For Tablet */
+@media (max-width: 970px) {
+    /* Navbar */
+    #navbar {
+        justify-content: center; 
+    }
+    .nav-link {
+        font-size: 1.2rem;
+    }
+    /* Main Doc */
+    #main-doc {
+        top: 45px;
+    }
+    /* Welcome Section */
+    #welcome-title {
+        font-size: 3rem;
+        margin: 0 auto;
+        padding-top: 75px;
+    }
+}
 
+@media (max-width: 550px){
+    #navbar {
+        justify-content: space-evenly;
+    }
+    .nav-link {
+        margin: 0;
+    }
+    #welcome-pic {
+        width: 75%;
+    }
+}
 
+@media (max-width: 500px) {
+    .nav-link {
+        padding: 0;
+    }
+    #main-doc {
+        top: 25px;
+    }
+    #welcome-title {
+        font-size: 2.2rem;
+    }
+}
 
