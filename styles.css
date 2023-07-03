@@ -141,18 +141,15 @@ body {
 
 /* For Tablet */
 @media (max-width: 970px) {
-    /* Navbar */
     #navbar {
         justify-content: center; 
     }
     .nav-link {
         font-size: 1.2rem;
     }
-    /* Main Doc */
     #main-doc {
         top: 45px;
     }
-    /* Welcome Section */
     #welcome-title {
         font-size: 3rem;
         margin: 0 auto;
@@ -181,6 +178,9 @@ body {
     }
     #welcome-title {
         font-size: 2.2rem;
+    }
+    #link-icons a {
+        margin: 10px 20px;
     }
 }
 
