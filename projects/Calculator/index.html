@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <metaewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Calculator</title>
+</head>
+<body>
+    <div id="calculator">
+        <div id="screen-section">
+            <span id="display">0</span>
+        </div>
+        <div id="input-section">
+            <table>
+                <tr>
+                    <td><button id="key-clear-entry">CE</button></td>
+                    <td><button id="key-clear-all">C</button></td>
+                    <td colspan="2"><button id="key-backspace">Backspace</button></td>
+                </tr>
+                <tr>
+                    <td><button id="data7" class="dataBtn" value="7">7</button></td>
+                    <td><button id="data8" class="dataBtn" value="8">8</button></td>
+                    <td><button id="data9" class="dataBtn" value="9">9</button></td>
+                    <td><button id="operatorDivide" class="operator" value="/">/</button></td>
+                </tr>
+                <tr>
+                    <td><button id="data4" class="dataBtn" value="4">4</button></td>
+                    <td><button id="data5" class="dataBtn" value="5">5</button></td>
+                    <td><button id="data6" class="dataBtn" value="6">6</button></td>
+                    <td><button id="operatorMultiply" class="operator" value="*">*</button></td>
+                </tr>
+                <tr>
+                    <td><button id="data1" class="dataBtn" value="1">1</button></td>
+                    <td><button id="data2" class="dataBtn" value="2">2</button></td>
+                    <td><button id="data3" class="dataBtn" value="3">3</button></td>
+                    <td><button id="operatorSubtract" class="operator" value="-">-</button></td>
+                </tr>
+                <tr>
+                    <td><button id="data0" class="dataBtn" value="0">0</button></td>
+                    <td><button id="dataPeriod" class="dataBtn">.</button></td>
+                    <td><button id="calculate" class="calculate">=</button></td>
+                    <td><button id="operatorAdd" class="operator" value="+">+</button></td>
+                </tr>
+                <tr>
+                    <td><button id="test" class="test">TEST</button></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <script src="calculator.js"></script>
+</body>
+</html>
