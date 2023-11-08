@@ -77,7 +77,7 @@ function inputData(e){
 function operation(e){
     operator = e.target.innerText;
     if (num1 != null && inputArray[0] != null){
-        mem.innerText = `${num1}${operator}${num2}=`;
+        //mem.innerText = `${num1}${operator}${num2}=`;
         calculate();
     }
     if (result != null){
@@ -109,20 +109,20 @@ function calculate(){
     } else if (operator === "/"){
         result = num1/num2;
     } else {
-        console.log("ERROR: Not a recognized operator")
+        console.log("ERROR: Not a recognized calculation")
     }
     mem.innerText = `${num1}${operator}${num2}=`;
     display.innerText = result;
-    inputArray = [];
-    num1 = null;
-    num2 = null;
-    operator = null;
+    // inputArray = [];
+    // num1 = null;
+    // num2 = null;
+    // operator = null;
 }
 
 function clear(){
     inputArray = [];
     display.innerText = 0;
-    mem.innerText = ""
+    // mem.innerText = ""
 }
 
 function clearAll(){
