@@ -11,12 +11,17 @@
     display: flex;
     flex-direction: column-reverse;
 }
+#mem {
+    text-align: right;
+    display: flex;
+    flex-direction: column-reverse;
+}
 
 button {
     padding: 10px;
     height: 75px;
     width: 75px;
 }
-#key-backspace {
+#btnBackspace {
     width: 155px;
 }
