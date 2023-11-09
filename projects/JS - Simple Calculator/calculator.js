@@ -26,12 +26,12 @@ const btnSubtract = document.getElementById("btnSubtract")
 const btnMultiply = document.getElementById("btnMultiply")
 const btnDivide = document.getElementById("btnDivide")
 const btnEqual = document.getElementById("btnEqual")
-const btnTest = document.getElementById("btnTest")
 const display = document.getElementById("display")
 const mem = document.getElementById("mem")
 const btnClear = document.getElementById("btnClear")
 const btnClearAll = document.getElementById("btnClearAll")
 const btnBackspace = document.getElementById("btnBackspace")
+// const btnTest = document.getElementById("btnTest")
 
 //Event Listeners
 btn0.addEventListener("click", inputData)
@@ -49,21 +49,21 @@ btnAdd.addEventListener("click", operation)
 btnSubtract.addEventListener("click", operation)
 btnMultiply.addEventListener("click", operation)
 btnDivide.addEventListener("click", operation)
-btnTest.addEventListener("click", test)
 btnClear.addEventListener("click", clear)
 btnClearAll.addEventListener("click", clearAll)
 btnBackspace.addEventListener("click", backspace)
 btnEqual.addEventListener("click", calculate)
+// btnTest.addEventListener("click", test)
 
 
 //Console.Log Btn
-function test(){
-    console.log(inputArray)
-    console.log(num1)
-    console.log(num2)
-    console.log(operator)
-    console.log(result)
-}
+// function test(){
+//     console.log(inputArray)
+//     console.log(num1)
+//     console.log(num2)
+//     console.log(operator)
+//     console.log(result)
+// }
 
 
 //Functions
