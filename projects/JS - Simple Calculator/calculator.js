@@ -60,6 +60,7 @@ btnTest.addEventListener("click", test)
 function test(){
     console.clear();
     console.log(`Input Array = ${inputArray}`)
+    console.log(`InputArray.length = ${inputArray.length}`)
     console.log(`num1 = ${num1}`)
     console.log(`num2 = ${num2}`)
     console.log(`operator = ${operator}`)
@@ -69,9 +70,11 @@ function test(){
 
 //Functions
 function inputData(e){
-    inputArray.push(e.target.innerText);
-    let number = +inputArray.join('');
-    display.innerText = number.toLocaleString();
+    if (inputArray.length < 13){
+        inputArray.push(e.target.innerText);
+        let number = +inputArray.join('');
+        display.innerText = number.toLocaleString();
+    }
 }
 
 function checkNum(){
