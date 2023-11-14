@@ -31,7 +31,7 @@ const mem = document.getElementById("mem")
 const btnClear = document.getElementById("btnClear")
 const btnClearAll = document.getElementById("btnClearAll")
 const btnBackspace = document.getElementById("btnBackspace")
-// const btnTest = document.getElementById("btnTest")
+const btnTest = document.getElementById("btnTest")
 
 //Event Listeners
 btn0.addEventListener("click", inputData)
@@ -53,28 +53,35 @@ btnClear.addEventListener("click", clear)
 btnClearAll.addEventListener("click", clearAll)
 btnBackspace.addEventListener("click", backspace)
 btnEqual.addEventListener("click", calculate)
-// btnTest.addEventListener("click", test)
+btnTest.addEventListener("click", test)
 
 
 //Console.Log Btn
-// function test(){
-//     console.log(inputArray)
-//     console.log(num1)
-//     console.log(num2)
-//     console.log(operator)
-//     console.log(result)
-// }
+function test(){
+    console.clear();
+    console.log(`Input Array = ${inputArray}`)
+    console.log(`num1 = ${num1}`)
+    console.log(`num2 = ${num2}`)
+    console.log(`operator = ${operator}`)
+    console.log(`result = ${result}`)
+}
 
 
 //Functions
 function inputData(e){
     inputArray.push(e.target.innerText);
-    display.innerText = +inputArray.join('');
+    let number = +inputArray.join('');
+    display.innerText = number.toLocaleString();
+}
+
+function checkNum(){
+
 }
 
 function backspace(){
     inputArray.pop();
-    display.innerText = +inputArray.join('');
+    let number = +inputArray.join('');
+    display.innerText = number.toLocaleString();
 }
 
 function clear(){
@@ -107,7 +114,7 @@ function operation(e){
         num2 = +inputArray.join('');
         inputArray = [];
     }
-    mem.innerText = num1+operator;
+    mem.innerText = num1.toLocaleString()+operator;
 }
 
 function calculate(){
@@ -128,6 +135,6 @@ function calculate(){
     } else {
         console.log("ERROR: Not a recognized calculation")
     }
-    mem.innerText = `${num1}${operator}${num2}=`;
-    display.innerText = result;
+    mem.innerText = `${num1.toLocaleString()}${operator}${num2.toLocaleString()}=`;
+    display.innerText = result.toLocaleString();
 }
