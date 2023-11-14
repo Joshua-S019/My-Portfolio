@@ -77,10 +77,6 @@ function inputData(e){
     }
 }
 
-function checkNum(){
-
-}
-
 function backspace(){
     inputArray.pop();
     let number = +inputArray.join('');
