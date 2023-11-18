@@ -53,11 +53,11 @@ body {
     color: #dae8e8;
     text-align: center;
 }
-#welcome-title {
+/* #welcome-title {
     font-size: 3rem;
     margin: 0 auto;
     padding: 75px 0;
-}
+} */
 #welcome-pic {
     border-radius: 50%;
     margin: 0 auto 100px;
