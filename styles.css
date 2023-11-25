@@ -3,17 +3,23 @@
     margin: 0;
     padding: 0;
 }
+
 a {
     text-decoration: none;
 }
-h1, h2, a {
+
+h1,
+h2,
+a {
     font-family: "Roboto Slab";
     font-weight: 400;
 }
+
 p {
     font-family: "Roboto";
     font-weight: 400;
 }
+
 body {
     position: relative;
 }
@@ -29,12 +35,14 @@ body {
     display: flex;
     justify-content: flex-end;
 }
+
 .nav-link {
     color: #dae8e8;
     font-size: 1.5rem;
     margin: 0 25px;
     padding: 10px 50px;
 }
+
 .nav-link:hover {
     color: white;
     background-color: #3852b2;
@@ -45,6 +53,7 @@ body {
     position: absolute;
     top: 50px;
     background-color: #dae8e8;
+    width: 100vw;
 }
 
 /* Welcome Section */
@@ -53,11 +62,13 @@ body {
     color: #dae8e8;
     text-align: center;
 }
+
 #welcome-title {
     font-size: 3rem;
     margin: 0 auto;
     padding: 75px 0;
 }
+
 #welcome-pic {
     border-radius: 50%;
     margin: 0 auto 100px;
@@ -69,19 +80,24 @@ body {
     margin: 100px auto;
     text-align: center;
 }
-#about-me, #techs-and-skills {
+
+#about-me,
+#techs-and-skills {
     width: 70%;
     margin: 0 auto 200px;
 }
+
 .mid-section-title {
     margin-bottom: 30px;
     font-size: 2rem;
 }
+
 #tech-icons {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
 }
+
 #tech-icon {
     font-size: 5rem;
     margin: 20px 50px;
@@ -94,25 +110,30 @@ body {
     justify-content: center;
     flex-wrap: wrap;
 }
+
 .project-img {
     object-fit: contain;
     height: 300px;
     width: 300px;
     border-radius: 10px;
 }
+
 .project-tile {
     background-color: #041240;
     padding: 10px;
     margin: 10px;
     border-radius: 10px;
 }
+
 .project-title {
     padding: 10px;
     font-size: 1.5rem;
 }
+
 #portfolio a {
     color: #dae8e8;
 }
+
 #portfolio a:hover {
     background-color: #3852b2;
     position: relative;
@@ -128,12 +149,14 @@ body {
     text-align: center;
     padding: 75px;
 }
+
 #link-icons a {
     color: #dae8e8;
     font-size: 2rem;
     margin: 0 50px;
     padding: 30px 0;
 }
+
 #footer-text {
     padding: 50px;
 }
@@ -142,14 +165,17 @@ body {
 /* For Tablet */
 @media (max-width: 970px) {
     #navbar {
-        justify-content: center; 
+        justify-content: center;
     }
+
     .nav-link {
         font-size: 1.2rem;
     }
+
     #main-doc {
         top: 45px;
     }
+
     #welcome-title {
         font-size: 3rem;
         margin: 0 auto;
@@ -157,13 +183,15 @@ body {
     }
 }
 
-@media (max-width: 550px){
+@media (max-width: 550px) {
     #navbar {
         justify-content: space-evenly;
     }
+
     .nav-link {
         margin: 0;
     }
+
     #welcome-pic {
         width: 75%;
     }
@@ -173,14 +201,16 @@ body {
     .nav-link {
         padding: 0;
     }
+
     #main-doc {
         top: 25px;
     }
+
     #welcome-title {
         font-size: 2.2rem;
     }
+
     #link-icons a {
         margin: 10px 20px;
     }
 }
-
