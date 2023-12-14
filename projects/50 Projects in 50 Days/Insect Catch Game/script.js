@@ -25,13 +25,43 @@ chooseInsectButtons.forEach(btn => {
 
 function startGame() {
     setInterval(increaseTime, 1000)
+    // checkForInsects()
+}
+
+// function checkForInsects() {
+//     const insects = document.querySelectorAll('.insect')
+//     if (insects.length > 0) {
+//         insects.forEach(bug => {
+//             setInterval(() => {
+//                 const rect = bug.getBoundingClientRect()
+//                 const currentX = Math.round(rect.left)
+//                 const currentY = Math.round(rect.top)
+//                 // console.log(`X:${currentX}/${window.innerWidth}, Y:${currentY}/${window.innerHeight}`);
+//                 const { x, y } = getRandomLocation()
+//                 bug.style.top = `${y}px`
+//                 bug.style.left = `${x}px`
+//                 bug.style.transition = `all 1s ease-in-out`
+//                 bug.style.transform = `rotate(${calcRotation(currentX, currentY, x, y)}deg)`
+//             }, 1000)
+//         })
+//     }
+// }
+
+
+
+function calcRotation(ax, ay, bx, by) {
+    var cy = by - ay
+    var cx = bx - ax
+    var theta = Math.atan2(cy, cx)
+    theta *= 180 / Math.PI
+    return theta
 }
 
 function increaseTime() {
     let m = Math.floor(seconds / 60)
     let s = seconds % 60
     m = m < 10 ? `0${m}` : m
-    s = s < 10 ? `${s}` : s
+    s = s < 10 ? `0${s}` : s
     timeElement.innerHTML = `Time: ${m}:${s}`
     seconds++
 }
@@ -42,11 +72,10 @@ function createInsect() {
     const { x, y } = getRandomLocation()
     insect.style.top = `${y}px`
     insect.style.left = `${x}px`
-    insect.innerHTML = `<img src="${selectedInsect.src}" alt="${selectedInsect.alt}" style="transform: rotate(${Math.random() * 360}deg)" />`
-
+    insect.innerHTML = `<img src="${selectedInsect.src}" alt="${selectedInsect.alt}" style="transform: rotate(${Math.random() * 360}deg)" draggable="false"/>`
     insect.addEventListener('click', catchInsect)
-
     gameContainer.appendChild(insect)
+    // checkForInsects()
 }
 
 function getRandomLocation() {
