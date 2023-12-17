@@ -132,8 +132,8 @@ h1 {
     width: 100px;
     height: 100px;
     position: absolute;
-    transform: translate(-50%, -50%) scale(1);
-    transition: transform 0.3s ease-in-out;
+    /* transform: translate(-50%, -50%) scale(1); */
+    /* transition: all 0.3s ease-in-out; */
     top: 200px;
     left: 300px;
     -webkit-user-select: none;
